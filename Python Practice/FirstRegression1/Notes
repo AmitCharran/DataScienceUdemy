@@ -1,0 +1,70 @@
+Section 33
+R-squared
+
+    Smaller regression error. Better the regression.
+
+    R-Squared measures the goodness of fit
+    R-Squared = SSR (Sum of squared regression) / SST (Sum of squared total)
+
+    R-Squared = (0 - 1)
+    1 is a perfect R-squared - hardly ever happens. It explains the entire variability of the data.
+    0 means regression line explains none of the variability of the data.
+
+
+
+
+
+
+
+Multiple Linear Regression
+    Need multiple regression to consider more factors in a problem
+    yhat = b0 + b1x1 + ... + bkxk (this equation considers more factors)
+
+    more variables usually equal a better fitting model
+
+
+
+
+
+Adjusted R-squared
+    Has multiple regressions (Always smaller than R-squared)
+    Adjusted R-Squared is the basis for comparing models
+
+
+Significance of F-statistic
+    Tests overall significance of the model
+    If F-statistic is lower the model is less significant. If higher, more significant
+
+
+Regressions
+    Linear- assumes linearity
+        can transform linear in cuvred line
+    No endogeneity
+        Refers to length between independent variables and errors (refers to ommitted variable bias)
+        ommitted variable bias is reflected in the error term
+    Normality and homoscedasticity
+        Normaility
+            has central limit theorem to contain normality
+        Homoscedasticity
+            means to have equal variance
+                Example rich people have higher variability of spending but poor people do not
+        Transforms
+            using log
+    No autocorrelation
+        aka no serial correlation
+            errors are assumed to be uncorrelated
+        Durban-watson test
+            0-4
+            2= no autocorrelation
+            1>= or <=3 autocorrelation (need to rework data or factors)
+    No multicollinearity
+        When 2 or more variables have a high correlation
+            fixes
+                drop one or two variables
+                transform variables into one variable
+                keep both, but adjust things
+
+        Do not form regression that violates one of these assumptions
+
+
+
