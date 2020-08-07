@@ -56,6 +56,19 @@ results = sm.OLS(y, x).fit()
 print(results.summary())
 # Rand 1,2,3 is a useless variable, we need to drop it
 
+# replacing categories with number
+raw_data = pd.read_csv('resources/1.03. Dummies.csv')
+data = raw_data.copy()
+data['Attendance'] = data['Attendance'].map({'Yes': 1, 'No': 0})
+
+print(data.describe())
+y = data['GPA']
+x1 = data[['SAT','Attendance']]
+x = sm.add_constant(x1)
+results = sm.OLS(y, x).fit()
+print(results.summary())
+
+
 
 
 
