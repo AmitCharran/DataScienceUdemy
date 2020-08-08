@@ -1,0 +1,24 @@
+Standardization
+    The process of subtracting the mean and dividing by the standard deviation
+
+Normalization
+    has different meaning depending on the case; here - we subtract the mean but divide by the L2-norm of the inputs
+
+feature_selection.f_regression
+    F-regression creates eimple linear regressions of each feature and the dependent variable
+       F-regression should be used with caution b/c it's too simplistic
+
+       p-values are the best way to determine if a factor(variable) is redundant
+            However it does not provide any information on how useful that variable is
+
+
+Feature Scaling / Normalization
+    Process of transforming data into a standard scale
+        Do this by subtracting the mean and dividing by standard deviation
+
+Underfitting vs Overfitting
+    Overfitting = our regression has focused on the particular training ser so much, it has missed the point
+        hard to spot b/c everything is right
+            split data in to 2 type. Unsupervised and supervised
+    Underfitting = The model has not captured the logic yet
+        easy to spot b/c no accuracy
